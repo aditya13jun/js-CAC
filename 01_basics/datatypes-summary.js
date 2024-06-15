@@ -29,3 +29,24 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction); //typeof() is used to find the datatype 
+
+//----------------------------
+
+//Stack Memory(Primitive), Heap Memory(Non-Primitive)
+
+let myYouTubeName = "Anime Borg"
+let anotherName = myYouTubeName
+anotherName = "Game Borg"
+console.log(myYouTubeName)
+console.log(anotherName)
+
+let user1 = {
+    email : "user1@gmail.com",
+    upi: "upi123k"
+}
+
+let user2 = user1
+user2.email = "aditya@gmail.com"
+console.log(user1.email)
+console.log(user2.email)
+//Stack makes a copy of data while Heap works on original dataset...
